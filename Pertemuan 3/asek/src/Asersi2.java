@@ -25,5 +25,6 @@ public class Asersi2 {
 /*
 Secara konsep, ada yang kurang tepat pada program Asersi2 di atas?
 Jawab:
-    Dalam kelas lingkaran, mereka tidak mengizinkan variable jariJari untuk diakses global, sehingga harus menggunakan setter dan getter untuk mengakses nilainya.
+    Asersi akan mengizinkan program untuk melanjutkan prosesnya jika kondisi di dalam asersi itu bernilai True, jika salah maka akan mengeluarkan pesan yang ada di dalamnya.
+    Pada kondisi tsb, pesan yang dikeluarkan asersi harusnya "jari-jari tidak boleh kurang dari sama dengan nol"
 */
