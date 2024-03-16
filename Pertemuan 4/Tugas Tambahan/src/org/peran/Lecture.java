@@ -18,9 +18,7 @@ public class Lecture extends Person{
     // Methods
     // Konstruktor
     public Lecture(String name, int age, String address, int employeeID) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
+        super(name, age, address);
         this.employeeID = employeeID;
         this.coursesTaught = new ArrayList<>();
     }
