@@ -32,4 +32,9 @@ public class Person {
     public void setAddress(String address){
         this.address = address;
     }
+    public void getDetails(){
+        System.out.println("Nama    : " + name);
+        System.out.println("Umur    : " + age);
+        System.out.println("Alamat  : " + address);
+    }
 }
