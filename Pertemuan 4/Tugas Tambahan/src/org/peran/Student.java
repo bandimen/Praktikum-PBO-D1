@@ -18,9 +18,7 @@ public class Student extends Person{
     //Methods
     //Konstruktor
     public Student(String name, int age, String address, int studentID) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
+        super(name, age, address);
         this.studentID = studentID;
         this.coursesEnrolled = new ArrayList<>();
     }
