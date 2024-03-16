@@ -40,9 +40,7 @@ public class Lecture extends Person{
     public void getDetails() {
         //System.out.println("Menjalankan method getDetails Lecture:");
         System.out.println("Data Dosen :");
-        System.out.println("Nama    : " + name);
-        System.out.println("Umur    : " + age);
-        System.out.println("Alamat  : " + address);
+        super.getDetails();
         System.out.println("NIP     : " + employeeID);
         System.out.println();
     } 
