@@ -40,9 +40,7 @@ public class Student extends Person{
     public void getDetails() {
         //System.out.println("Menjalankan method getDetails Student :");
         System.out.println("Data Mahasiswa :");
-        System.out.println("Nama    : " + name);
-        System.out.println("Umur    : " + age);
-        System.out.println("Alamat  : " + address);
+        super.getDetails();
         System.out.println("NIM     : " + studentID);
         System.out.println();
     }
