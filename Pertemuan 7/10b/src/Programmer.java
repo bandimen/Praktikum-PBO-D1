@@ -5,13 +5,14 @@
  */
 
 public class Programmer extends Pegawai{
-    private int bonus = 450000;
+    private int bonus;
 
     public Programmer(){
 
     }
     public Programmer(String nama){
         super(nama);
+        this.bonus = 450000;
     }
     public int getBonus(){
         return this.bonus;
