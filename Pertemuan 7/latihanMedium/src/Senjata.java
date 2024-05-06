@@ -15,6 +15,7 @@ public class Senjata {
     public Senjata(String bunyi){
         this.bunyi = bunyi;
         this.menusuk = false;
+        this.peluru = 0;
     }
     public String getBunyi(){
         return this.bunyi;
