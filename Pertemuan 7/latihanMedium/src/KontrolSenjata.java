@@ -4,7 +4,7 @@
  * Lab  : D1
  */
 
-public class KontrolSenjata extends Senjata{
+public class KontrolSenjata{
     private Senjata senjata;
 
     public KontrolSenjata(){
@@ -14,11 +14,11 @@ public class KontrolSenjata extends Senjata{
         this.senjata = s;
     }
     public boolean isAdaPeluru(){
-        return getPeluru() > 0;
+        return senjata.getPeluru() > 0;
     }
 
     public void isiPeluru(int jumPeluru){
-        setPeluru(getPeluru() + jumPeluru);
+        senjata.setPeluru(senjata.getPeluru() + jumPeluru);
         System.out.println("Peluru berhasil ditambah: "+jumPeluru);
     }
 
@@ -28,13 +28,13 @@ public class KontrolSenjata extends Senjata{
             for(int i = jumlah; i > 0; i--){
                 if(isAdaPeluru()){
                     System.out.println(senjata.getBunyi());
-                    setPeluru(getPeluru() - 1);
+                    senjata.setPeluru(senjata.getPeluru() - 1);
                 }
                 else{
                     System.out.println("Gagal tembak, Peluru Habis");
                 }
             }
-            System.out.println("Peluru sisa: " + getPeluru());
+            System.out.println("Peluru sisa: " + senjata.getPeluru());
         }
         else{
             System.out.println("Peluru Habis");
@@ -42,7 +42,7 @@ public class KontrolSenjata extends Senjata{
     }
 
     public String menusuk(){
-        if(isMenusuk()){
+        if(senjata.isMenusuk()){
             return "Jleb!";
         }
         else{
@@ -50,7 +50,7 @@ public class KontrolSenjata extends Senjata{
         }
     }
     public void pasangBayonet(){
-        setMenusuk(true);
+        senjata.setMenusuk(true);
         System.out.println("Bayonet Terpasang");
     }
 }
