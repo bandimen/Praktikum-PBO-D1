@@ -5,13 +5,14 @@
  */
 
 public class Manajer extends Pegawai{
-    private int tunjangan = 700000;
+    private int tunjangan;
 
     public Manajer(){
 
     }
     public Manajer(String nama){
         super(nama);
+        this.tunjangan = 700000;
     }
     public int getTunjangan(){
         return this.tunjangan;
