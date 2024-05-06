@@ -6,13 +6,15 @@
 
 public class Pegawai {
     private String nama;
-    private int gajiPokok = 5000000;
+    private int gajiPokok;
 
     public Pegawai(){
 
     }
     public Pegawai(String nama){
         this.nama = nama;
+        this.gajiPokok = 5000000;
+
     }
 
     public String getNama(){
