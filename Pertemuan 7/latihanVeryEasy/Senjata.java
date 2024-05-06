@@ -13,7 +13,7 @@ public class Senjata {
     }
     public Senjata(String bunyi){
         this.bunyi = bunyi;
-        this.menusuk = false;
+        this.peluru = 0;
     }
     public String getBunyi(){
         return this.bunyi;
@@ -28,10 +28,10 @@ public class Senjata {
         this.peluru = peluru;
     }
     public void menembak(){
-        if(getPeluru()>0){
-            System.out.println(getBunyi());
-            setPeluru(getPeluru()-1);
-            System.out.println("Sisa Peluru: " + getPeluru());
+        if(peluru > 0){
+            System.out.println(bunyi);
+            setPeluru(peluru - 1);
+            System.out.println("Sisa Peluru: " + peluru);
         }
         else{
             System.out.println("Peluru Habis");
